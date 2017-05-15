@@ -12,27 +12,27 @@
 
   </head>
   <body>
-    <div id="scroll-to-next" onclick="$.scrollify.next();">
+    <!-- <div id="scroll-to-next" onclick="$.scrollify.next();">
       <i id="arrow" class="material-icons">arrow_downward</i>
-    </div>
+    </div> -->
     <div id="section1" class="row custom-row-full scrollable">
       <div class="container">
         <div id="profile-pic" class="col s12 l3">
-          <img id="avatar" src="avatar.png">
+          <img id="avatar" src="avatar.jpg">
         </div>
         <div class="typed-text col s12 l9">
           <span id="typed-text-here"></span>
           <div id="description">
-            <a id="links" class="waves-effect waves-red btn-flat" onclick="moveSection(2);">
-              PROGRAMMER
+            <a id="links" class="waves-effect waves-red btn-flat" href="https://github.com/daviidli">
+              Github
             </a>
             <span id="link-slash">|</span>
-            <a id="links" class="waves-effect waves-red btn-flat" onclick="moveSection(3);">
-              DESIGNER
+            <a id="links" class="waves-effect waves-red btn-flat" href="https://1drv.ms/f/s!AgNcVBNF-qGbsAxg9jYSQjP2fS85">
+              Portfolio
             </a>
             <span id="link-slash">|</span>
-            <a id="links" class="waves-effect waves-red btn-flat" onclick="moveSection(4);">
-              ME
+            <a id="links" class="waves-effect waves-red btn-flat" href="Resume.pdf">
+              Resume
             </a>
           </div>
         </div>
@@ -111,35 +111,35 @@
         console.log(num);
       };
 
-      $(document).ready(function() {
-        var arrow;
-        $("#scroll-to-next").hover(function() {
-          animateArrow();
-          arrow = setInterval(function() {animateArrow();}, 1200);
-        }, function() {
-            clearInterval(arrow);
-          })
-      });
-
-      function animateArrow() {
-        $("#arrow").animate({
-          top: "8vh",
-          opacity: "0",
-        }, {
-          duration: 500,
-          easing: "easeInQuart",
-          complete: function() {
-            $("#arrow").css({
-              "top": "-6vh",
-            });
-            $("#arrow").animate({top: "0vh", opacity: "1"}, {duration: 700, easing:"easeOutQuart"});
-          },
-        });
-      };
-
-      // function stopAnimateArrow() {
+      // $(document).ready(function() {
+      //   var arrow;
+      //   $("#scroll-to-next").hover(function() {
+      //     animateArrow();
+      //     arrow = setInterval(function() {animateArrow();}, 1200);
+      //   }, function() {
+      //       clearInterval(arrow);
+      //     })
+      // });
       //
-      // }
+      // function animateArrow() {
+      //   $("#arrow").animate({
+      //     top: "8vh",
+      //     opacity: "0",
+      //   }, {
+      //     duration: 500,
+      //     easing: "easeInQuart",
+      //     complete: function() {
+      //       $("#arrow").css({
+      //         "top": "-6vh",
+      //       });
+      //       $("#arrow").animate({top: "0vh", opacity: "1"}, {duration: 700, easing:"easeOutQuart"});
+      //     },
+      //   });
+      // };
+      //
+      // // function stopAnimateArrow() {
+      // //
+      // // }
     </script>
   </body>
 </html>
