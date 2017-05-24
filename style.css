@@ -1,50 +1,48 @@
-.custom-row-full {
-	min-height: 100vh;
-	margin-bottom: 0px;
+body {
+  /*background-color: #303030;*/
+  background-color: #3A3A3A;
+  color: #FDFDFD;
+  font-family: "Roboto", sans-serif;
 }
 
-#scroll-to-next {
-	position: absolute;
-	top: 82vh;
-	left: 46vw;
-	color: #fff;
-	cursor: pointer;
+.latolato {
+  font-family: "Lato", sans-serif;
+  text-shadow: #000 0 2px 5px;
 }
 
-#arrow {
-	position: relative;
-	font-size: 8vh;
-	top: 0vh;
+.latolato2 {
+  font-family: "Lato", sans-serif;
+  text-shadow: #000 0 3px 4px;
 }
 
-#section1 {
-	background-color: #222;
+#about {
+  border-radius: 0 0 40px 40px;
 }
 
-#section2 {
-	background-color: green;
+.resp-text {
+  font-size: 1.25rem;
 }
 
-#section3 {
-	background-color: orange;
+nav {
+  height: 225px;
+  position: fixed;
+  z-index: 100;
+  background-color: #0d0d0d;
 }
 
-#hidden {
-	visibility: hidden;
+#logo {
+  padding-top: 40px;
+  height: 169px;
+  text-align: center;
 }
 
-#profile-pic {
-	margin-top: 10vh;
-}
-
-#avatar {
-	float: right;
-	width: 30vmin;
-	height: 30vmin;
+#dave {
+  /*margin-top: 30vh;*/
+  height: 169px;
+  width: auto;
 }
 
 .typed-text {
-	text-align: right;
 	color: #ecf0f1;
 }
 
@@ -53,45 +51,227 @@
 	font-size: 12vh;
 }
 
-#link-slash {
-	font-family: 'Lato', sans-serif;
-	font-size: 2vh;
-	color: #f44336;
+#buttons {
+  height: 56px;
+  font-family: "Roboto", sans-serif;
 }
 
-#links {
-	font-family: 'Nunito Sans', sans-serif;
-	font-size: 3vh;
-	color: #fff;
-	padding-left: 0.5vmax;
-	padding-right: 0.5vmax;
+#buttons-list {
+  display: table;
+  margin: 0 auto;
 }
 
-#links:hover {
-	background-color: rgba(183, 28, 28, 0.5);
+nav li {
+  height: 56px;
 }
 
-.btn-flat {
-	height: 4vh;
-	line-height: 4vh;
+nav ul a.btn {
+  margin: 4px;
+  margin-top: -10px;
+  border-radius: 20px;
+  width: 86px;
+  padding-left: 0;
+  padding-right: 0;
+  /*border: 2px solid white;*/
+}
+
+.table-of-contents a {
+  height: 36px;
+  line-height: 36px;
+  background-color: #727072;
+  color: white;
+}
+
+.table-of-contents a.active {
+  font-weight: normal;
+  padding-left: 0;
+  padding-right: 0;
+  /*border: 2px solid white;*/
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.table-of-contents a:hover {
+  padding: 0;
+  /*border: 2px solid white;*/
+  background-color: #e53935;
+  color: white;
+  border: none;
+}
+
+.btn:focus {
+  background-color: #727072;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.radius {
+  border-radius: 30px;
+}
+
+.radius-big {
+  border-radius: 40px;
+}
+
+.radius-bottom {
+  border-radius: 0 0 30px 30px;
+}
+
+#spacer {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+#coder {
+  background-color: #575757;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 250px;
+  padding: 10px;
+}
+
+/*.card-heading {
+  margin-top: 15px;
+}*/
+
+#coder-header {
+  /*padding-bottom: 15px;*/
+  /*border-bottom: 5px solid #FF8C12;*/
+}
+
+.heading {
+  text-align: center;
+}
+
+.description {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#designer {
+  background-color: #575757;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#designer-header {
+  /*padding-bottom: 15px;*/
+  /*border-bottom: 5px solid #009BFF;*/
+}
+
+.card-custom-coder {
+  background-color: #C90103;
+  color: #FDFDFD;
+}
+
+.card-custom-designer {
+  background-color: #00AFF2;
+  color: #FDFDFD;
+}
+
+.card-custom-about {
+  background-color: #f39c12;
+  color: #FDFDFD;
+}
+
+.card-action {
+  text-align: center;
+}
+
+.card-btn-custom {
+  border-radius: 50px;
+}
+
+.card-coder {
+  background-color: #FF8C12;
+}
+
+.card-designer {
+  background-color: #009BFF;
+}
+
+.card-about {
+  background-color: #e67e22;
+}
+
+.card-btn-custom:hover {
+  background-color: #212121;
+  color: white;
+}
+
+#about {
+  background-color: #575757;
+  margin-bottom: 20px;
+}
+
+#profile-pic {
+  height: 350px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#profile {
+  height: 350px;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+#profile-header {
+  /*height: 150px;*/
+  margin-top: 10px;
+}
+
+#about-header {
+  padding-bottom: 15px;
+  border-bottom: 5px solid #e53935;
+}
+
+@media only screen and (min-width : 370px) {
+  nav ul a.btn {
+    margin: 5px;
+    margin-top: -10px;
+    width: 100px;
+  }
+
+
 }
 
 @media only screen and (min-width : 600px) {
+  nav ul a.btn {
+    margin: 10px;
+    margin-top: -10px;
+    width: 115px;
+  }
 
+  .resp-text {
+      font-size: 1.2rem;
+  }
 }
 
 @media only screen and (min-width : 992px) {
-	#profile-pic {
-		margin-top: 25vh;
-	}
+  .resp-text {
+      font-size: 1.15rem;
+  }
 
-	.typed-text {
-		margin-top: 25vh;
-	}
+  /*#dave {
+    margin-top: 20vh;
+    height: 50vh;
+    width: auto;
+  }*/
+}
 
-	#avatar {
-		float: left;
-	}
+@media only screen and (min-width : 1200px) {
+
 }
 
 /* cursor for typed.js */

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 470 207.1" style="enable-background:new 0 0 470 207.1;" xml:space="preserve">
+	 <style type="text/css">
+	 	.st0 {
+	 		fill:#202529;
+	 		stroke:#fff;
+	 		stroke-width:30;
+	 		stroke-miterlimit:10;
+	 		stroke-dasharray: 300;
+	 		stroke-dashoffset:0;
+	 		-webkit-animation: dash 1.4s linear forwards;
+	 		-o-animation: dash 1.4s linear forwards;
+	 		-moz-animation: dash 1.4s linear forwards;
+	 		animation: dash 1.4s linear forwards;
+	 	}
+
+	 	@-webkit-keyframes dash {
+	 		0% {
+	 			stroke-dashoffset: 300;
+	 			fill: #3A3A3A;
+	 			stroke: #fff;
+	 		}
+	 		100% {
+	 			stroke-dashoffset: 0;
+	 			fill: #3A3A3A;
+	 			stroke: #fff;
+	 		}
+	 	}
+	 </style>
+<path id="XMLID_20_" class="st0" d="M0,68.5h50c19.3,0,35,15.7,35,35v0c0,19.3-15.7,35-35,35H0"/>
+<polyline id="XMLID_21_" class="st0" points="125,103.5 160,33.5 230,173.5 265,103.5 "/>
+<line id="XMLID_22_" class="st0" x1="305" y1="53.5" x2="305" y2="153.5"/>
+<line id="XMLID_23_" class="st0" x1="345" y1="53.5" x2="345" y2="153.5"/>
+<path id="XMLID_18_" class="st0" d="M370,68.5h50c19.3,0,35,15.7,35,35v0c0,19.3-15.7,35-35,35h-50"/>
+</svg>
