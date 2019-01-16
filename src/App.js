@@ -1,33 +1,39 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
-import withStyles from "@material-ui/core/styles/withStyles";
-import Paper from '@material-ui/core/Paper';
-import {greeting} from "./content/data";
+import Paper from "@material-ui/core/Paper";
+import compose from "recompose/compose";
+import { withStyles } from "@material-ui/core/styles";
+import Hidden from "@material-ui/core/Hidden";
+import withWidth from "@material-ui/core/withWidth";
+import Header from "./components/Header";
+import About from "./components/About";
+import Resume from "./components/Resume";
 
 const muiTheme = createMuiTheme({
     palette: {
         primary: {
-            main: "#3490FF"
+            main: "#e66767"
         },
         secondary: {
-            main: "#FF005E",
+            main: "#574b90",
         },
     },
+    typography: {
+        useNextVariants: true,
+    }
 });
 
 const styles = theme => ({
-    container: {
-        width: window.innerWidth,
-        height: window.innerHeight
-    },
     paper: {
         margin: "auto",
-        marginTop: theme.spacing.unit * 3,
-        width: "90%",
-        height: "90%",
-        padding: theme.spacing.unit,
-    }
+        marginTop: theme.spacing.unit * 10,
+        width: "90%"
+    },
+    paperSmall: {
+        paddingTop: theme.spacing.unit * 3
+    },
 });
 
 class App extends Component {
@@ -36,27 +42,62 @@ class App extends Component {
 
         this.state = {
             useEmoji: true
-        };
+        }
     }
+
+    toggleEmoji = (e) => {
+        e.preventDefault();
+        this.setState({useEmoji: !this.state.useEmoji});
+    };
+
+    displayEmoji = (emoji, alt) => {
+        if (alt === "") {
+            return this.state.useEmoji ? <span>{emoji}</span> : "";
+        } else {
+            return this.state.useEmoji ? <span>{emoji}</span> : alt;
+        }
+    };
+
+    stringEmoji = (emoji, alt) => {
+        return this.state.useEmoji ? emoji : alt;
+    };
+
+    paperWrapper = (content) => {
+        return (
+            <div>
+                <Hidden xsDown>
+                    <Paper className={this.props.classes.paper} elevation={10} square={true}>
+                        <Header toggleEmoji={this.toggleEmoji} emoji={this.displayEmoji} />
+                        {content}
+                    </Paper>
+                </Hidden>
+                <Hidden smUp>
+                    <Paper className={this.props.classes.paperSmall} elevation={0} square={true}>
+                        <Header toggleEmoji={this.toggleEmoji} emoji={this.displayEmoji} />
+                        {content}
+                    </Paper>
+                </Hidden>
+            </div>
+        );
+    };
 
     render() {
         return (
-            <div className="App">
-                <MuiThemeProvider theme={muiTheme}>
-                    <div className={this.props.classes.container}>
-                        <Paper className={this.props.classes.paper} elevation={1} square={true}>
-                            <div style={{fontSize: 20}} dangerouslySetInnerHTML={{__html: greeting}}>
-
-                            </div>
-                        </Paper>
-                    </div>
-                    <div >
-                        {/*<p>hello</p>*/}
-                    </div>
-                </MuiThemeProvider>
-            </div>
+            <Router>
+                <div>
+                    <MuiThemeProvider theme={muiTheme}>
+                        <div>
+                            <Route path={"/"} exact render={() => this.paperWrapper(<About emoji={this.displayEmoji} />)} />
+                            <Route path={"/resume/"} exact render={() => this.paperWrapper(<Resume emoji={this.displayEmoji} sEmoji={this.stringEmoji}/>)} />
+                        </div>
+                    </MuiThemeProvider>
+                </div>
+            </Router>
         );
     }
 }
 
-export default withStyles(styles)(App);
+export default compose(
+    withStyles(styles),
+    withWidth(),
+)(App);
