@@ -97,7 +97,4 @@ class App extends Component {
     }
 }
 
-export default compose(
-    withStyles(styles),
-    withWidth(),
-)(App);
+export default compose(withStyles(styles), withWidth())(App);
