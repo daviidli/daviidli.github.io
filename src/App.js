@@ -32,8 +32,14 @@ const styles = theme => ({
         width: "90%"
     },
     paperSmall: {
-        paddingTop: theme.spacing.unit * 3
+        marginTop: theme.spacing.unit * 2,
+        width: "95%",
+        margin: "auto"
     },
+    spacer: {
+        width: 1,
+        height: theme.spacing.unit * 3,
+    }
 });
 
 class App extends Component {
@@ -66,13 +72,14 @@ class App extends Component {
         return (
             <div>
                 <Hidden xsDown>
-                    <Paper className={this.props.classes.paper} elevation={10} square={true}>
+                    <Paper className={this.props.classes.paper} elevation={12} square={true}>
                         <Header toggleEmoji={this.toggleEmoji} emoji={this.displayEmoji} />
                         {content}
                     </Paper>
                 </Hidden>
                 <Hidden smUp>
-                    <Paper className={this.props.classes.paperSmall} elevation={0} square={true}>
+                    <Paper className={this.props.classes.paperSmall} elevation={20} square={true}>
+                        <div className={this.props.classes.spacer}> </div>
                         <Header toggleEmoji={this.toggleEmoji} emoji={this.displayEmoji} />
                         {content}
                     </Paper>

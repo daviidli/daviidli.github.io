@@ -16,6 +16,9 @@ const styles = theme => ({
     desc: {
         marginTop: 0,
         marginLeft: -theme.spacing.unit * 2
+    },
+    bullet: {
+        color: "#e66767"
     }
 });
 
@@ -44,7 +47,7 @@ function ResumeItem(props) {
                     {item.hasOwnProperty("desc") && (
                         <ul className={props.classes.desc}>
                             {item.desc.map((d, i) => (
-                                <li key={i}>
+                                <li key={i} className={props.classes.bullet}>
                                     <Typography variant={"body1"} component="p">
                                         {d}
                                     </Typography>

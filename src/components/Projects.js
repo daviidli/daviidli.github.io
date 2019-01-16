@@ -62,7 +62,7 @@ function Projects(props) {
                         title={{url: "", text: "insightUBC", emoji: "💯 "}}
                         subtitle={"Typescript, Node.js, HTML, CSS"}
                         desc={[
-                            "Website and Node.js server that allows for the querying of UBC course and building information",
+                            "Website and Node.js server that allows for the querying of UBC course and building information with specified queries",
                         ]}
                     />
                 </Grid>

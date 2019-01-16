@@ -26,6 +26,9 @@ const styles = theme => ({
         paddingRight: theme.spacing.unit,
         paddingTop: theme.spacing.unit / 2,
         paddingBottom: theme.spacing.unit / 2,
+    },
+    bullet: {
+        color: "#e66767"
     }
 });
 
@@ -55,7 +58,7 @@ function ProjectItem(props) {
             {props.hasOwnProperty("desc") && (
                 <ul className={props.classes.desc}>
                     {props.desc.map((d, i) => (
-                        <li key={i}>
+                        <li key={i} className={props.classes.bullet}>
                             <Typography variant={"body1"} component="p">
                                 {d}
                             </Typography>
