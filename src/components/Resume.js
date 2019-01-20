@@ -31,30 +31,30 @@ function Resume(props) {
                 <Grid item>
                     <ResumeItem
                         width={115}
-                        title={props.sEmoji("📞 ", "") + "contact"}
+                        title={props.emoji("📞 ", "") + "contact"}
                         data={[
-                            { subHeading: props.sEmoji("✉", "mail") + ": d.li.2247@gmail.com" }
+                            { subHeading: props.emoji("✉", "mail") + ": d.li.2247@gmail.com" }
                         ]}
                     />
                 </Grid>
                 <Grid item>
                     <ResumeItem
                         width={145}
-                        title={props.sEmoji("🎒 ", "") + "education"}
+                        title={props.emoji("🎒 ", "") + "education"}
                         data={[{
                             heading: "Business and Computer Science",
                             subHeading: "University of British Columbia",
-                            date: "Year 3 – expected" + props.sEmoji(" 🎓", "") + ": May 2020"
+                            date: "Year 3 – expected" + props.emoji(" 🎓", "") + ": May 2020"
                         }]}
                     />
                 </Grid>
                 <Grid item>
                     <ResumeItem
                         width={200}
-                        title={props.sEmoji("🏢 ", "") + "work experience"}
+                        title={props.emoji("🏢 ", "") + "work experience"}
                         data={[{
                             heading: "Software Development Engineer",
-                            subHeading: "Sierra Wireless" + props.sEmoji(" 📶", ""),
+                            subHeading: "Sierra Wireless" + props.emoji(" 📶", ""),
                             date: "Sep 2017 – May 2018",
                             desc: [
                                 "Implemented features and added functionality to Sierra’s hardware API for Windows",
@@ -67,19 +67,19 @@ function Resume(props) {
                 <Grid item>
                     <ResumeItem
                         width={265}
-                        title={props.sEmoji("💾 ", "") + "technological expertise"}
+                        title={props.emoji("💾 ", "") + "technological expertise"}
                         data={[
                             {
                                 heading: "Languages",
                                 desc: [
-                                    props.sEmoji("💪 ", "") + "Proficient: C++, Java, JavaScript, Typescript",
-                                    props.sEmoji("🤔 ", "") + "Working knowledge: C#, C, Python, HTML, CSS",
+                                    props.emoji("💪 ", "") + "Proficient: C++, Java, JavaScript, Typescript",
+                                    props.emoji("🤔 ", "") + "Working knowledge: C#, C, Python, HTML, CSS",
                                 ]
                             }, {
                                 heading: "Technologies",
                                 desc: [
-                                    props.sEmoji("💪 ", "") + "Proficient: Node.js, ReactJS, MySQL, REST, Git",
-                                    props.sEmoji("🤔 ", "") + "Working knowledge: Unity, Firebase, SVN"
+                                    props.emoji("💪 ", "") + "Proficient: Node.js, ReactJS, MySQL, REST, Git",
+                                    props.emoji("🤔 ", "") + "Working knowledge: Unity, Firebase, SVN"
                                 ]
                             }
                         ]}

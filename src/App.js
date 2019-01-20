@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import Paper from "@material-ui/core/Paper";
@@ -56,13 +56,13 @@ class App extends Component {
         this.setState({useEmoji: !this.state.useEmoji});
     };
 
-    displayEmoji = (emoji, alt) => {
-        if (alt === "") {
-            return this.state.useEmoji ? <span>{emoji}</span> : "";
-        } else {
-            return this.state.useEmoji ? <span>{emoji}</span> : alt;
-        }
-    };
+    // displayEmoji = (emoji, alt) => {
+    //     if (alt === "") {
+    //         return this.state.useEmoji ? <span>{emoji}</span> : "";
+    //     } else {
+    //         return this.state.useEmoji ? <span>{emoji}</span> : alt;
+    //     }
+    // };
 
     stringEmoji = (emoji, alt) => {
         return this.state.useEmoji ? emoji : alt;
@@ -73,14 +73,14 @@ class App extends Component {
             <div>
                 <Hidden xsDown>
                     <Paper className={this.props.classes.paper} elevation={12} square={true}>
-                        <Header toggleEmoji={this.toggleEmoji} emoji={this.displayEmoji} />
+                        <Header toggleEmoji={this.toggleEmoji} emoji={this.stringEmoji} />
                         {content}
                     </Paper>
                 </Hidden>
                 <Hidden smUp>
                     <Paper className={this.props.classes.paperSmall} elevation={20} square={true}>
                         <div className={this.props.classes.spacer}> </div>
-                        <Header toggleEmoji={this.toggleEmoji} emoji={this.displayEmoji} />
+                        <Header toggleEmoji={this.toggleEmoji} emoji={this.stringEmoji} />
                         {content}
                     </Paper>
                 </Hidden>
@@ -94,8 +94,8 @@ class App extends Component {
                 <div>
                     <MuiThemeProvider theme={muiTheme}>
                         <div>
-                            <Route path={"/"} exact render={() => this.paperWrapper(<About emoji={this.displayEmoji} />)} />
-                            <Route path={"/resume/"} exact render={() => this.paperWrapper(<Resume emoji={this.displayEmoji} sEmoji={this.stringEmoji}/>)} />
+                            <Route path={"/"} exact render={() => this.paperWrapper(<About emoji={this.stringEmoji} />)} />
+                            <Route path={"/resume/"} render={() => this.paperWrapper(<Resume emoji={this.stringEmoji}/>)} />
                         </div>
                     </MuiThemeProvider>
                 </div>

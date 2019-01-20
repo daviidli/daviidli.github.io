@@ -48,7 +48,7 @@ class Header extends Component {
                     </Grid>
                     <Grid item>
                         <IconButton color="primary" className={this.props.classes.button}>
-                            <Link to={"/resume/"} className={this.props.classes.button}>{this.props.emoji("🧾", "Resume")}</Link>
+                            <Link to={"/resume/"} className={this.props.classes.button}>{this.props.emoji("📋", "Resume")}</Link>
                         </IconButton>
                     </Grid>
                     <Grid item>
