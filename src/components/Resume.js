@@ -87,7 +87,7 @@ function Resume(props) {
                 </Grid>
                 <Grid item>
                     <ResumeItem
-                        width={265}
+                        width={165}
                         title={props.emoji("👓 ", "") + "hackathons"}
                         data={[
                             {
