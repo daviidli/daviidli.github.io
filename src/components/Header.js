@@ -42,19 +42,25 @@ class Header extends Component {
                     spacing={window.innerWidth <= 600 ? 16 : 32}
                 >
                     <Grid item>
-                        <IconButton color="primary" className={this.props.classes.button}>
-                            <Link to={"/"} className={this.props.classes.button}>{this.props.emoji("👤", "About")}</Link>
-                        </IconButton >
+                        <Link to={"/"} className={this.props.classes.button}>
+                            <IconButton color="primary" className={this.props.classes.button}>
+                                {this.props.emoji("👤", "About")}
+                            </IconButton >
+                        </Link>
                     </Grid>
                     <Grid item>
-                        <IconButton color="primary" className={this.props.classes.button}>
-                            <Link to={"/resume/"} className={this.props.classes.button}>{this.props.emoji("📋", "Resume")}</Link>
-                        </IconButton>
+                        <Link to={"/resume/"} className={this.props.classes.button}>
+                            <IconButton color="primary" className={this.props.classes.button}>
+                                {this.props.emoji("📋", "Resume")}
+                            </IconButton>
+                        </Link>
                     </Grid>
                     <Grid item>
-                        <IconButton color="primary" className={this.props.classes.button}>
-                            <a href={"http://github.com/daviidli"} className={this.props.classes.button}>{this.props.emoji("💻", "Github")}</a>
-                        </IconButton>
+                        <a href={"http://github.com/daviidli"} className={this.props.classes.button}>
+                            <IconButton color="primary" className={this.props.classes.button}>
+                                {this.props.emoji("💻", "Github")}
+                            </IconButton>
+                        </a>
                     </Grid>
                     <Grid item>
                         <IconButton color="primary" className={this.props.classes.button} onClick={this.props.toggleEmoji}>

@@ -85,6 +85,25 @@ function Resume(props) {
                         ]}
                     />
                 </Grid>
+                <Grid item>
+                    <ResumeItem
+                        width={265}
+                        title={props.emoji("👓 ", "") + "hackathons"}
+                        data={[
+                            {
+                                heading: "BizHacks",
+                                desc: [
+                                    props.emoji("📱 ", "") + "Worked in a team of 4 to create a solution for customers of BestBuy to quickly find assistance from employees while at their stores",
+                                ]
+                            }, {
+                                heading: "nwHacks",
+                                desc: [
+                                    props.emoji("🕹 ", "") + "Worked in a team of 3 to create a platform game, Smilee, incorporating Microsoft’s Emotion API "
+                                ]
+                            }
+                        ]}
+                    />
+                </Grid>
             </Grid>
         </div>
     );
