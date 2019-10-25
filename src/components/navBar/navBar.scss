@@ -1,0 +1,21 @@
+.bar {
+	position: fixed;
+	top: 0;
+	height: 50px;
+	width: 100vw;
+	background-color: #000;
+
+	.grid {
+		height: 50px;
+	}
+
+	.gridItem {
+		text-align: center;
+	}
+
+	.github {
+		height: 30px;
+		width: 30px;
+		margin-top: 5px;
+	}
+}

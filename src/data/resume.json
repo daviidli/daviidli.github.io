@@ -1,0 +1,64 @@
+{
+	"contact": {
+		"heading": "contact",
+		"email": "someEmail@email.com"
+	},
+	"education": {
+		"heading": "education",
+		"school": "UBC",
+		"program": "program",
+		"year": "4",
+		"grad": "some month"
+	},
+	"work": {
+		"heading": "work exp",
+		"data": [
+			{
+				"comapny": "some company",
+				"position": "some position",
+				"keywords": [
+					"one",
+					"two",
+					"three"
+				],
+				"start": "sometime",
+				"end": "sometime",
+				"description": [
+					"line1",
+					"line2",
+					"line3"
+				]
+			}
+		]
+	},
+	"technologies": {
+		"heading": "technologies",
+		"languages": {
+			"heading": "languages",
+			"proficient": [
+				"java"
+			],
+			"workingKnowledge": [
+				"C"
+			]
+		},
+		"technologies": {
+			"heading": "technologies",
+			"proficient": [
+				"java"
+			],
+			"workingKnowledge": [
+				"C"
+			]
+		}
+	},
+	"hackathons": {
+		"heading": "hackathons",
+		"data": [
+			{
+				"title": "nwhacks",
+				"descriptions": "something"
+			}
+		]
+	}
+}

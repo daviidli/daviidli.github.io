@@ -1,0 +1,73 @@
+{
+	"heading": "projects",
+	"projects": [
+		{
+			"title": "📖 summary",
+			"keywords": [
+				"TypeScript",
+				"React.js"
+			],
+			"description": [
+				"Extractive text summarizer to split and rank sentences to create concise summaries",
+				"Summarizes the given text using both TextRank and RAKE to allow for comparison between the two algorithms"
+			],
+			"link": "https://google.com",
+			"image": "..."
+		},
+		{
+			"title": "🃏 blackjackDB",
+			"keywords": [
+				"TypeScript",
+				"React.js",
+				"MySQL",
+				"Java Spring Boot"
+			],
+			"description": [
+				"Worked on a team of four for an academic project for my Relational Database course",
+				"ReactJS frontend for game logic and interaction with database",
+				"MySQL database hosted on an AWS EC2 instance",
+				"Java Spring Boot REST API for communication between frontend and MySQL database"
+			],
+			"link": "https://google.com",
+			"image": "..."
+		},
+		{
+			"title": "💯 insightUBC",
+			"keywords": [
+				"TypeScript",
+				"React.js",
+				"HTML/CSS"
+			],
+			"description": [
+				"Website and Node.js server that allows for the querying of UBC course and building information with specified queries"
+			],
+			"image": "..."
+		},
+		{
+			"title": "📱 BestBuy customer service app",
+			"keywords": [
+				"TypeScript",
+				"React.js"
+			],
+			"description": [
+				"Android app for running on kiosk tablets in BestBuy to give customers a simple way of viewing the catalog or requesting help",
+				"Utilizes Firebase’s Realtime database to structure, save and sync customer data in a queue for employees to view in their employee app"
+			],
+			"link": "https://google.com",
+			"image": "..."
+		},
+		{
+			"title": "😁 smilee",
+			"keywords": [
+				"C#",
+				"Unity"
+			],
+			"description": [
+				"Platformer game that uses Microsoft’s Emotion API for detecting emotions during gameplay to give their character different special abilities",
+				"Uses a singleton design pattern for the game controller and procedurally generated obstacles during gameplay"
+			],
+			"link": "https://google.com",
+			"image": "..."
+		}
+	]
+}

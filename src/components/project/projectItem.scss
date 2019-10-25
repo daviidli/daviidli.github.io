@@ -1,0 +1,38 @@
+.card {
+	background-color: #000;
+	margin-bottom: 16px !important;
+	padding: 12px;
+}
+
+.title {
+	font-size: 1.2em;
+
+	.link {
+		background-color: rgba(192, 57, 43, 0.5);
+		padding: 1px;
+		padding-right: 5px;
+		cursor: pointer;
+		color: #fff;
+		text-decoration: none;
+
+		&:link {
+			color: #fff;
+		}
+
+		&:hover {
+			color: #f1c40f;
+		}
+	}
+}
+
+.description {
+	list-style: none;
+	margin-bottom: 12px;
+	color: #ccc;
+
+	&:before {
+		content: '>';
+		margin-left: -20px;
+		margin-right: 10px;
+	}
+}

@@ -1,0 +1,22 @@
+.button {
+	display: inline-block;
+	background-color: #222;
+	color:  #fff;
+	cursor: pointer;
+	line-height: 2.4;
+	height: 38px;
+	width: 100%;
+	margin-top: 6px;
+	transition: background-color 0.5s;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+
+	&:hover {
+		background-color: #aaa;
+		transition: background-color 0.5s;
+	}
+
+	&.current {
+		background-color: #c0392b;
+	}
+}
