@@ -14,7 +14,7 @@
 		"heading": "work exp",
 		"data": [
 			{
-				"comapny": "some company",
+				"company": "some company",
 				"position": "some position",
 				"keywords": [
 					"one",
@@ -57,7 +57,9 @@
 		"data": [
 			{
 				"title": "nwhacks",
-				"descriptions": "something"
+				"description": [
+					"something"
+				]
 			}
 		]
 	}
