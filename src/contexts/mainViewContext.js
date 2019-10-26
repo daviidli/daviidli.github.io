@@ -5,7 +5,8 @@ const MainViewContext = React.createContext();
 const SECTIONS = Object.freeze({
 	FRONT: 0,
 	RESUME: 1,
-	PROJECTS: 2
+	PROJECTS: 2,
+	INTERESTS: 3
 });
 
 const MainViewContextProvider = (props) => {

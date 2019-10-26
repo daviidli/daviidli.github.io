@@ -1,0 +1,32 @@
+.small-sidebar {
+	width: 100%;
+	position: fixed;
+	left: -100%;
+	top: 0;
+	transition: left 0.4s cubic-bezier(0.75, 0.25, 0.25, 0.75);
+
+	&.open {
+		left: 0px;
+		transition: left 0.4s cubic-bezier(0.75, 0.25, 0.25, 0.75);
+	}
+}
+
+.toggle {
+	position: fixed;
+	left: 0;
+	transition: left 0.25s ease-in-out;
+	background-color: #1B1F23;
+
+	&.open {
+		left: -40px;
+		transition: left 0.25s ease-in-out;
+	}
+
+	.menu {
+		width: 30px;
+		height: 30px;
+		margin: 0 2px;
+		margin-top: 3px;
+	}
+}
+

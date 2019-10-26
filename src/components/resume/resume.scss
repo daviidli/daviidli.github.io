@@ -1,0 +1,56 @@
+.resume {
+	.resume-title {
+		height: 80px;
+		background-color: red;
+		line-height: 4.5;
+		padding: 12px;
+		font-size: 1.2em;
+	}
+
+	.minor-title {
+		font-size: 1.2em;
+		height: 30px;
+		background-color: #691b1b;
+		line-height: 1.5;
+		padding: 12px;
+	}
+
+	.card {
+		padding: 20px;
+
+		.title {
+			font-size: 1.2em;
+			margin-bottom: 8px;
+		}
+
+		.content {
+			color: #ccc;
+		}
+
+		.list {
+			margin-top: 6px;
+			margin-bottom: 6px;
+		}
+
+		.list-item {
+			list-style: none;
+			margin-bottom: 8px;
+			color: #ccc;
+		
+			&:before {
+				content: '>';
+				margin-left: -20px;
+				margin-right: 10px;
+			}
+		}
+
+		.tech {
+			margin-top: 5px;
+		}
+
+		.item {
+			background-color: #2F363D;
+			padding: 4px;
+		}
+	}
+}

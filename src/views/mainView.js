@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useContext } from 'react';
 import Projects from '../components/project/projects';
-import Resume from '../components/Resume';
+import Resume from '../components/resume/resume';
 import { MainViewContext, SECTIONS } from '../contexts/mainViewContext';
 
 import './mainView.scss';
 
-function MainView() {
+function MainView(props) {
 	const [section, setSection] = useContext(MainViewContext);
 	const [scrollY, setScrollY] = useState(0);
-	const [orientation, setOrientation] = useState(0);	
 	
 	useEffect(() => {
 		const onScroll = (e) => {
@@ -20,25 +19,23 @@ function MainView() {
 	}, [setScrollY]);
 
 	useEffect(() => {
-		const onChange = () => {
-			setOrientation(orientation + 1);
-		};
+		const setHeights = () => {
+			const front = document.getElementById('david').clientHeight;
+			const resume = document.getElementById('resume').clientHeight;
+			const projects = document.getElementById('projects').clientHeight;
+			const height = [0, front, front + resume, front + resume + projects];
+			setSection(prev => ({ ...prev, height: height }));
+		}
 
-		window.addEventListener('resize', onChange);
-		return () => window.removeEventListener('resize', onChange);
-	});
-
-	useEffect(() => {
-		const front = document.querySelector('#front').clientHeight;
-		const resume = document.querySelector('#resume').clientHeight;
-		const height = [0, front, front + resume];
-		setSection(prev => ({ ...prev, height: height }));
-	}, [setSection, orientation]);
+		setTimeout(setHeights, 100);
+	}, [setSection, props.width]);
 
 	useEffect(() => {
 		const bufferHeight = window.innerHeight / 5;
 		
-		if (scrollY >= section.height[SECTIONS.PROJECTS] - bufferHeight) {
+		if (scrollY >= section.height[SECTIONS.INTERESTS] - bufferHeight) {
+			setSection(prev => ({ ...prev, current: SECTIONS.INTERESTS }));
+		} else if (scrollY >= section.height[SECTIONS.PROJECTS] - bufferHeight) {
 			setSection(prev => ({ ...prev, current: SECTIONS.PROJECTS }));
 		} else if (scrollY >= section.height[SECTIONS.RESUME] - bufferHeight) {
 			setSection(prev => ({ ...prev, current: SECTIONS.RESUME }));
@@ -49,7 +46,7 @@ function MainView() {
 
 	return (
 		<React.Fragment>
-			<div id='front' className='section'>
+			<div id='david' className='section'>
 				front page
 			</div>
 			<div id='resume' className='section'>
@@ -57,6 +54,9 @@ function MainView() {
 			</div>
 			<div id='projects' className='section'>
 				<Projects />
+			</div>
+			<div id='interests' className='section'>
+				interests
 			</div>
 		</React.Fragment>
 	);

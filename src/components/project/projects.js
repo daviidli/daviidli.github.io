@@ -1,36 +1,24 @@
-import React, { useEffect, useState } from 'react';
-// import data from '../../data/projects';
+import React from 'react';
 import ProjectItem from './projectItem';
-import axios from 'axios';
+import useJson from '../hooks/useJson';
 
 import './projects.scss';
 
 function Projects() {
-
-	const [data, setData] = useState({
+	const initialState = {
 		heading: 'projects',
 		projects: []
-	});
-
-	// useEffect(() => {
-	// 	axios.get('https://raw.githubusercontent.com/daviidli/News/master/frontend/package.json')
-	// 		.then((response) => {
-	// 			setData(response.data);
-	// 		})
-	// 		.catch((error) => {
-	// 			console.log(error);
-	// 			setData({
-	// 				heading: 'projects',
-	// 				projects: []
-	// 			});
-	// 		})
-	// }, [data, setData]);
+	}
+	const data = useJson(
+		'https://raw.githubusercontent.com/daviidli/daviidli.github.io/code/src/data/projects.json',
+		initialState
+	);
 
 	return (
-		<React.Fragment>
-			<div className='projects'>{ data.heading }</div>
+		<div>
+			<div className='project-title'>{ data.heading }</div>
 			{ data.projects.map((item, i) => <ProjectItem info={item} key={i} />)}
-		</React.Fragment>
+		</div>
 	);
 }
 

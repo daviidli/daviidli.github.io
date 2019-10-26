@@ -1,0 +1,39 @@
+.sidebar {
+	height: 100vh;
+	width: inherit;
+	background-color: #1B1F23;
+	position: fixed;
+	left: 0;
+	top: 0;
+	border-right: 0.25px solid #2F363D;
+
+	.button {
+		border: 0.25px solid #2F363D;
+		height: 50px;
+		text-align: center;
+		line-height: 3;
+		cursor: pointer;
+		transition: all 0.3s ease-out;
+
+		&.current {
+			background-color: #2F363D;
+			color: #33CD56;
+			transition: all 0.3s ease-out;
+
+			&::before {
+				content: '> '
+			}
+		}
+
+		&:hover {
+			background-color: #000;
+			transition: background-color 0.3s ease-in;
+		}
+
+		.github {
+			height: 40px;
+			width: 40px;
+			margin-top: 4px;
+		}
+	}
+}
