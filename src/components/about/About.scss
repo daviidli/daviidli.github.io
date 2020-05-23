@@ -1,0 +1,11 @@
+@import '../../shared';
+
+.about {
+	padding-top: 10px;
+
+	.description {
+		@media #{$mq-large} {
+			font-size: 1.3em;
+		}
+	}
+}

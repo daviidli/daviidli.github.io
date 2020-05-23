@@ -1,0 +1,24 @@
+@import '../../shared';
+
+.skills {
+	padding-top: 2em;
+
+	table {
+		margin-bottom: 2em;
+	}
+
+	th {
+		font-family: 'PT Serif';
+		font-style: italic;
+		font-weight: 300;
+	}
+
+	td {
+		border: 1px solid #cdcdcd;
+		padding: 0.5em;
+
+		@media #{$mq-medium} {
+			padding-right: 1em;
+		}
+	}
+}

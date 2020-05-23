@@ -1,0 +1,27 @@
+.item {
+	.title {
+		font-family: 'PT Serif', serif;
+		font-size: 1.5em;
+		padding: 1em;
+		padding-bottom: 0.5em;
+		margin: 0;
+	}
+
+	.description {
+		font-size: 1.15em;
+		padding: 0em 1em;
+		padding-bottom: 0.5em;
+		margin: 0;
+	}
+
+	.corn-tooltip-container {
+		height: 100%;
+	}
+
+	.tooltip {
+		&::after {
+			font-size: 1em;
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,2 @@
+- **email**: [dvdli026@gmail.com](mailto:dvdli026@gmail.com)
+- **linkedin**: [daviidli](https://www.linkedin.com/in/daviidli/)

@@ -1,0 +1,65 @@
+@import '../../shared';
+
+$fsize: 1.15em;
+$fsize-med: 1.4em;
+$labelWidth: 25%;
+
+.work {
+	padding-top: 2em;
+
+	.ant-timeline-item-label {
+		font-size: $fsize - 0.15em;
+
+		@media #{$mq-medium} {
+			font-size: $fsize-med - 0.15em;
+		}
+	}
+
+	.ant-timeline-item {
+		padding-bottom: 4 * $fsize;
+		line-height: $fsize + 1em;
+
+		@media #{$mq-medium} {
+			line-height: $fsize-med + 1em;
+		}
+	}
+
+	.ant-timeline.ant-timeline-label .ant-timeline-item-label {
+		width: calc(#{$labelWidth} - 1.5em)
+	}
+
+	.ant-timeline-item-content {
+		font-size: $fsize;
+		margin-left: 2em;
+		left: calc(#{$labelWidth} - 4px) !important;
+		width: calc((100% - #{$labelWidth}) - 1.5em) !important;
+
+		@media #{$mq-medium} {
+			font-size: $fsize-med;
+		}
+	}
+
+	.ant-timeline-item-tail {
+		left: #{$labelWidth} !important;
+	}
+
+	.ant-timeline-item-head {
+		left: #{$labelWidth} !important;
+	}
+
+	.heading {
+		margin-bottom: 2em;
+	}
+
+	.timeline {
+		h1 {
+			font-family: 'PT Serif';
+			font-size: 1.15em;
+		}
+
+		h2 {
+			line-height: 0.9em;
+			font-size: 0.9em;
+		}
+	}
+}

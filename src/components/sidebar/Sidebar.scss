@@ -1,0 +1,45 @@
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 1em;
+	padding-left: 1em;
+	background: linear-gradient(to right, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+	z-index: 1;
+
+	.icon {
+		width: 1.5em;
+		height: 1.5em;
+		cursor: pointer;
+	}
+}
+
+.side-drawer {
+	.avatar {
+		width: 10rem;
+		height: 10rem;
+		border-radius: 50px;
+		margin: 0 auto;
+		display: block;
+		border: solid 2px rgba(255, 255, 255, 0.5);
+	}
+
+	.corn-sidebar-panel {
+		list-style-type: none;
+		padding-top: 3em;
+		padding-left: 0em;
+		text-align: center;
+
+		.link {
+			button {
+				color: #ddd;
+				margin: 0.25em 0;
+			}
+
+			&.active button {
+				color: #1890ff;
+			}
+		}
+	}
+}

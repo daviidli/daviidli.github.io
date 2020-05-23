@@ -1,0 +1,59 @@
+@import '../../shared';
+
+.landing {
+	height: 100vh;
+	width: 100%;
+
+	.title {
+		font-size: 6rem;
+		font-weight: 700;
+		line-height: 1em;
+		width: 100%;
+
+		@media #{$mq-medium} {
+			font-size: 8rem;
+		}
+
+		@media #{$mq-xxlarge} {
+			font-size: 18rem;
+		}
+	}
+
+	.content {
+		height: 100%;
+	}
+
+	.name {
+		animation: colorChange linear alternate-reverse 3s infinite;
+	}
+
+	.links {
+		margin-top: 0.75em;
+		display: flex;
+		font-size: smaller;
+
+		a {
+			display: inline-flex;
+		}
+	}
+}
+
+.arrow {
+	width: 100%;
+	position: absolute;
+	bottom: 1em;
+	color: grey;
+	text-align: center;
+	font-size: 1rem;
+
+	.arrow-container {
+		display: inline-flex;
+		flex-direction: column;
+	}
+}
+
+@keyframes colorChange {
+	0% { color: #1890ff; }
+	50% { color:#2f54eb; }
+	100% { color:#eb2f96; }
+}

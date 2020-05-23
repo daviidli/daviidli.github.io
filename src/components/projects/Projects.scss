@@ -1,0 +1,33 @@
+.projects {
+	min-height: 100vh;
+	padding-top: 2em;
+}
+
+.drawer {
+	.ant-drawer-content {
+		padding-top: 2.25em;
+		border-radius: 1em 1em 0 0;
+	}
+
+	.md {
+		font-size: large;
+	}
+
+	.anticon.anticon-close {
+		padding: 0.5em;
+		border-radius: 0.5em;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: rgba($color: #000000, $alpha: 0.1);
+		}
+	}
+}
+
+.drawer-container {
+	height: auto;
+
+	.content {
+		min-height: auto;
+	}
+}
