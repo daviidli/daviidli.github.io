@@ -5,7 +5,8 @@ import {
 	AiFillCaretDown,
 	AiOutlineGithub,
 	AiOutlineMail,
-	AiOutlineLinkedin
+	AiOutlineLinkedin,
+	AiOutlineFile
 } from 'react-icons/ai';
 import { scroller } from 'react-scroll';
 import Button from '@bit/daviidli.corn-ui.button';
@@ -35,6 +36,11 @@ const links = [
 		icon: <AiOutlineLinkedin size="1.75em" />,
 		link: 'https://www.linkedin.com/in/daviidli/',
 		tooltip: 'LinkedIn'
+	},
+	{
+		icon: <AiOutlineFile size="1.75em" />,
+		link: 'https://dvdli.dev/resume.pdf',
+		tooltip: 'Resume'
 	}
 ];
 

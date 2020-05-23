@@ -9,8 +9,8 @@
 ### Web Technologies
 | Front End |  |
 |:--|:--|
-| Proficient          | `ReactJS` `Redux` `Mobx` `Mobx-State-Tree` `HTML` `CSS` |
-| Working knowledge   | `Electron` `SASS` |
+| Proficient          | `ReactJS` `Redux` `Mobx-State-Tree` `HTML` `CSS` |
+| Working knowledge   | `Electron` `SASS` `Mobx` |
 
 | Back End |  |
 |:--|:--|
