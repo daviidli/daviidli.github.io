@@ -32,11 +32,11 @@ const links = [
 		link: 'mailto:david@dvdli.dev',
 		tooltip: 'Email'
 	},
-	{
-		icon: <AiOutlineLinkedin size="1.75em" />,
-		link: 'https://www.linkedin.com/in/daviidli/',
-		tooltip: 'LinkedIn'
-	},
+	// {
+	// 	icon: <AiOutlineLinkedin size="1.75em" />,
+	// 	link: 'https://www.linkedin.com/in/daviidli/',
+	// 	tooltip: 'LinkedIn'
+	// },
 	{
 		icon: <AiOutlineFile size="1.75em" />,
 		link: 'https://dvdli.dev/resume.pdf',
