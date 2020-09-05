@@ -1,5 +1,5 @@
 # Software Development Engineer
 ## @ [Sierra Wireless](https://sierrawireless.com)
-- Implemented features to Sierra's hardware API for Windows.
-- Designed and implemented automated static code analysis on Sierra servers during nightly builds.
+- Worked with embedded software team to implement new features and fix defects for compatibility with Windows.
+- Designed and implemented automated static code analysis as part of Sierra's automated testing procedures.
 - Primarily worked in C++ and C# on Visual Studios.
