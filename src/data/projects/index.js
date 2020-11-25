@@ -20,17 +20,24 @@ const data = [
 		link: 'https://dvdli.itch.io/ikantc'
 	},
 	{
-		title: 'Darts',
-		description: 'A darts game for Arduino connected dartboards.',
-		// content: darts,
-		github: 'https://github.com/daviidli/darts'
-	},
-	{
 		title: 'It Depends',
 		description: 'A tool for visualizing entity dependencies which cross-cut commit history.',
 		// content: itdepends,
 		github: 'https://github.com/daviidli/it-depends-vis',
-		link: 'https://daviidli.github.io/it-depends-vis'
+		link: 'https://dvdli.dev/it-depends-vis'
+	},
+	{
+		title: 'Summary',
+		description: 'Extractive text summarization using TextRank and RAKE.',
+		// content: summary,
+		github: 'https://github.com/daviidli/summary',
+		link: 'https://dvdli.dev/summary'
+	},
+	{
+		title: 'Darts',
+		description: 'A darts game for Arduino connected dartboards.',
+		// content: darts,
+		github: 'https://github.com/daviidli/darts'
 	},
 	{
 		title: 'Typescript.ts',
@@ -45,13 +52,6 @@ const data = [
 		content: news,
 		github: 'https://github.com/daviidli/News',
 		link: ''
-	},
-	{
-		title: 'Summary',
-		description: 'Browser-based extractive text summarization using TextRank and RAKE.',
-		// content: summary,
-		github: 'https://github.com/daviidli/summary',
-		link: 'https://daviidli.github.io/summary'
 	},
 	{
 		title: 'Smilee',
