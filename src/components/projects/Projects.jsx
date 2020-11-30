@@ -22,7 +22,7 @@ const Projects = () => {
 						md: 2,
 						lg: 2,
 						xl: 2,
-						xxl: 3
+						xxl: 2
 					}}
 					dataSource={projectData}
 					renderItem={item => ProjectItem({ ...item, setDrawer })}

@@ -15,7 +15,7 @@ const data = [
 	// },
 	{
 		title: 'I Kant C',
-		description: 'A platformer where you can\'t see!',
+		description: 'A platformer where you can\'t see!\nBuilt for GMTK Game Jam 2020',
 		github: 'https://github.com/daviidli/IKantC',
 		link: 'https://dvdli.itch.io/ikantc'
 	},

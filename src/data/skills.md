@@ -30,5 +30,5 @@
 ### Non-Tech
 | |  |
 |:--|:--|
-| Proficient          | `Photoshop` `InDesign` |
-| Working knowledge   | `Illustrator` `After Effects` |
+| Proficient          | `Photoshop` `InDesign` `Illustrator` |
+| Working knowledge   | `After Effects` |
