@@ -7,12 +7,7 @@ import summary from './summary.md';
 import smilee from './smilee.md';
 
 const data = [
-	// {
-	// 	title: 'Corn-UI',
-	// 	description: 'Some simple yet customizable React components.',
-	// 	content: corn,
-	// 	link: 'https://bit.dev/daviidli/corn-ui'
-	// },
+
 	{
 		title: 'I Kant C',
 		description: 'A platformer where you can\'t see!\nBuilt for GMTK Game Jam 2020',
@@ -32,6 +27,12 @@ const data = [
 		// content: summary,
 		github: 'https://github.com/daviidli/summary',
 		link: 'https://dvdli.dev/summary'
+	},
+	{
+		title: 'Corn-UI',
+		description: 'Some simple yet customizable React components.',
+		// content: corn,
+		link: 'https://bit.dev/daviidli/corn-ui'
 	},
 	{
 		title: 'Darts',
